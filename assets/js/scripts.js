@@ -111,7 +111,7 @@
         }
         else if (values.incident_consequences) {
             description += "不但會" + values.incident_consequences[0] + "，" + "更會";
-            description += values.incident_consequences.slice(1).join("、") + "，行為";
+            description += values.incident_consequences.slice(1).join("，") + "，行為";
         }
 
         description += values.condemn_wording + "。";
