@@ -15,89 +15,109 @@
     </div>
     <div class="wrapper">
         <div class="page">
-            <div class="header">
-            </div>
-            <div class="body">
-                政府強烈譴責暴力行為<br>
-                ＊＊＊＊＊＊＊＊＊＊＊<br><br>
-                　　就昨日（七月二十一日）晚上在上環及元朗發生的暴力行為，特區政府作以下回應：<br><br>
-                
-                　　繼之前衝擊中聯辦大樓後，再有激進示威者無視警方多次警告，在上環一帶向警方發動連番暴力襲擊，包括投擲汽油彈、縱火、擲磚，亦堵塞主要幹道，行為令人髮指。<br><br>
-                
-                　　與此同時，在元朗有人聚眾在港鐵車站月台及車廂內襲擊乘客，引發衝突，導致有人受傷。<br><br>
-                
-                　　香港作為法治社會完全不能容忍任何暴力行為，特區政府予以強烈譴責，並會嚴正追究。 <br><br>
+            <div class="img-output-wrapper">
+                <div class="header">
+                </div>
+                <div class="body">
+                    政府強烈譴責暴力行為<br>
+                    ＊＊＊＊＊＊＊＊＊＊＊<br><br>
+                    　　就昨日（七月二十一日）晚上在上環及元朗發生的暴力行為，特區政府作以下回應：<br><br>
                     
-                完<br><br>
-                2019年7月22日（星期一）<br><br>
-                香港時間0時16分
+                    　　繼之前衝擊中聯辦大樓後，再有激進示威者無視警方多次警告，在上環一帶向警方發動連番暴力襲擊，包括投擲汽油彈、縱火、擲磚，亦堵塞主要幹道，行為令人髮指。<br><br>
+                    
+                    　　與此同時，在元朗有人聚眾在港鐵車站月台及車廂內襲擊乘客，引發衝突，導致有人受傷。<br><br>
+                    
+                    　　香港作為法治社會完全不能容忍任何暴力行為，特區政府予以強烈譴責，並會嚴正追究。 <br><br>
+                        
+                    完<br><br>
+                    2019年7月22日（星期一）<br><br>
+                    香港時間0時16分
+                </div>
             </div>
         </div>
         <div class="form">
-            <h2>開始 9up</h2>
             <form>
+                <h2>開始 9up</h2>
                 <div class="item">
-                    <label for="condemn_name">譴責標題</label>
-                    <input name='condemn_name' id='condemn_name' type='text' placeholder="政府強烈譴責暴力行為">
+                    <label for="condemn_title">譴責標題</label>
+                    <input name='condemn_title' id='condemn_title' type='text' placeholder="政府強烈譴責暴力行為" required>
                 </div>
                 <div class="item">
                     <label for="condemning">譴責對象</label>
-                    <input name='condemning' id='condemning' type='text' placeholder="示威者">
+                    <input name='condemning' id='condemning' type='text' placeholder="示威者" required>
                 </div>
                 <div class="item">
                     <label for="condemn_lvl">譴責程度</label>
-                    <select name='condemn_lvl' id='condemn_lvl'>
-                        <option value="1">予以譴責</option>
-                        <option value="2">予以強烈譴責</option>
-                        <option value="3">深表遺憾</option>
-                        <option value="4">謹此致歉</option>
+                    <select name='condemn_lvl' id='condemn_lvl' required>
+                        <option value="予以譴責">予以譴責</option>
+                        <option value="予以嚴厲譴責">予以嚴厲譴責</option>
+                        <option value="予以強烈譴責">予以強烈譴責</option>
+                        <option value="深表遺憾">深表遺憾</option>
+                        <option value="謹此致歉">謹此致歉</option>
                     </select>
                 </div>
                 <div class="item">
                     <label for="condemn_wording">譴責用語</label>
-                    <select name='condemn_wording' id='condemn_wording'>
-                        <option value="1">令人髮指</option>
-                        <option value="2">罪無可恕</option>
-                        <option value="3">罪該萬死</option>
-                        <option value="4">罪有應得</option>
-                        <option value="5">教人不值</option>
+                    <select name='condemn_wording' id='condemn_wording' required>
+                        <option value="令人髮指">令人髮指</option>
+                        <option value="罪無可恕">罪無可恕</option>
+                        <option value="罪該萬死">罪該萬死</option>
+                        <option value="罪有應得">罪有應得</option>
                     </select>
                 </div>
                 <div class="item">
                     <label for="incident_date">事件日期</label>
-                    <input name='incident_date' id='incident_date' type='date'>
+                    <input name='incident_date' id='incident_date' type='date' required>
                 </div>
                 <div class="item">
                     <label for="incident_location">事件地點</label>
-                    <input name='incident_location' id='incident_location' type='text' placeholder="中聯辦">
+                    <input name='incident_location' id='incident_location' type='text' placeholder="中聯辦" required>
                 </div>
                 <div class="item">
                     <label for="incident_type">事件類型</label>
-                    <select name='incident_type' id='incident_type'>
-                        <option value="violence">暴力</option>
-                        <option value="violence">罷工</option>
-                        <option value="violence">謠言</option>
-                        <option value="others">其他</option>
+                    <select name='incident_type' id='incident_type' required>
+                        <option value="暴力">暴力</option>
+                        <option value="罷工">罷工</option>
+                        <option value="謠言">謠言</option>
+                        <option value="其他">其他</option>
                     </select>
                 </div>
                 <div class="item">
                     <label for="incident_elements">元素</label>
                     <div class="checkbox">
-                        <input name='incident_elements' id='incident_elements' value="trespass" type="checkbox"> 衝擊
+                        <input name='incident_elements' value="衝擊" type="checkbox"> 衝擊
                     </div>
                     <div class="checkbox">
-                        <input name='incident_elements' id='incident_elements' value="assault" type="checkbox"> 襲擊
+                        <input name='incident_elements' value="襲擊" type="checkbox"> 襲擊
                     </div>
                     <div class="checkbox">
-                        <input name='incident_elements' id='incident_elements' value="occupy" type="checkbox"> 佔據
+                        <input name='incident_elements' value="佔據" type="checkbox"> 佔據
                     </div>
                     <div class="checkbox">
-                        <input name='incident_elements' id='incident_elements' value="vandalism" type="checkbox"> 破壞公物
+                        <input name='incident_elements' value="破壞公物" type="checkbox"> 破壞公物
                     </div>
                     <div class="checkbox">
-                        <input name='incident_elements' id='incident_elements' value="others" type="checkbox"> 其他
-                        <input name='incident_elements_others' id='incident_elements_others' type='text'>
+                        <input name='incident_elements' value="魯莽" type="checkbox"> 魯莽
                     </div>
+                </div>
+                <div class="item">
+                    <label for="incident_consequences">後果</label>
+                    <div class="checkbox">
+                        <input name='incident_consequences' value="造成人命傷亡" type="checkbox"> 造成人命傷亡
+                    </div>
+                    <div class="checkbox">
+                        <input name='incident_consequences' value="破壞法治" type="checkbox"> 破壞法治
+                    </div>
+                    <div class="checkbox">
+                        <input name='incident_consequences' value="破壞香港作為國際金融中心的聲譽" type="checkbox"> 破壞香港作為國際金融中心的聲譽
+                    </div>
+                    <div class="checkbox">
+                        <input name='incident_consequences' value="others" type="checkbox"> 其他
+                        <input name='incident_consequences_others' id='incident_elements_others' type='text'>
+                    </div>
+                </div>
+                <div class="item">
+                    <input type="submit" value="9up">
                 </div>
             </form>
         </div>

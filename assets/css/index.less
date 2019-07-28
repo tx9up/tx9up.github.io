@@ -40,21 +40,26 @@ body {
 }
 
 .form {
-    width: 300px;
-    padding: 0 30px;
+    width: 350px;
     height: 100vh;
     background-color: #444444;
     border-left: 4px solid #888888;
     color: white;
     box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+    overflow: auto;
 
     &, * {
         font-family: 'Noto Sans TC', sans-serif;
     }
+
+    h2 {
+        margin: 0;
+        margin-bottom: 20px;
+    }
 }
 
 form {
-    width: inherit;
+    padding: 20px 30px;
 
     .item {
         label {
@@ -81,6 +86,17 @@ form {
 
         & + .item {
             margin-top: 20px;
+        }
+
+        input[type="submit"] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border: 0;
+            border-radius: 4px;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
         }
     }
 }
