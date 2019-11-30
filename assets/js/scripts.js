@@ -150,8 +150,16 @@
         paragraphs.push("");
 
         let now = new Date();
+        let weekday = now.getDay();
 
-        paragraphs.push(now.getFullYear() + "年" + (now.getMonth() + 1) + "月" + now.getDate() + "日（星期" + rep[now.getDay()] + "）");
+        if (weekday == 0) {
+            weekday = "日";
+        }
+        else {
+            weekday = rep[weekday];
+        }
+
+        paragraphs.push(now.getFullYear() + "年" + (now.getMonth() + 1) + "月" + now.getDate() + "日（星期" + weekday + "）");
         paragraphs.push("香巷時間" + now.getHours() + "時" + now.getMinutes() + "分");
 
         $('.page .body').html(paragraphs.join("</br>"));
